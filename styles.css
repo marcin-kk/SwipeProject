@@ -144,7 +144,7 @@ p {
 	background-color: var(--primary-accent);
 	color: var(--text-light);
 	padding: var(--spacing-sm) var(--spacing-md);
-	transition: all .15s ease;
+	transition: all 0.15s ease;
 }
 
 .primary-button:hover {
@@ -161,10 +161,24 @@ p {
 	border: none;
 	background-color: transparent;
 	color: var(--primary-accent);
-	transition: all .15s ease;
+	transition: all 0.15s ease;
 }
 
 .secondary-button:hover {
 	opacity: 0.75;
 	cursor: pointer;
+}
+
+.with-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.with-icon > img {
+	transition: transform 0.25s ease;
+}
+
+.with-icon:hover > img {
+	transform: translateX(4px);
 }
