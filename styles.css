@@ -49,7 +49,6 @@ body {
 	box-sizing: border-box;
 	padding: var(--spacing-sm) 0 0 0;
 	background-color: var(--purple-1);
-
 }
 
 h1 {
@@ -59,7 +58,7 @@ h1 {
 	margin: 0;
 	width: 100%;
 	letter-spacing: -1px;
-	/* line-height: var(--h1-height); */
+	line-height: var(--h1-height);
 }
 
 h2 {
@@ -121,6 +120,41 @@ p {
 	line-height: var(--p-height);
 	font-weight: 400;
 	margin: var(--spacing-md) 0;
+}
+
+/* Layout Styles */
+
+.section-container {
+	width: 100%;
+	max-width: var(--standard-width);
+}
+
+.two-column {
+	box-sizing: border-box;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.two-column > .col-left {
+	width: 50%;
+	box-sizing: border-box;
+	padding: 0 var(--spacing-md) 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.two-column > .col-right {
+	width: 50%;
+	box-sizing: border-box;
+	padding: 0 0 0 var(--spacing-md);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 .subtitle,
@@ -193,13 +227,14 @@ p {
 }
 
 /* NAVBAR */
+
 .navbar {
 	display: flex;
 	justify-content: space-between;
-	align-items:center;
+	align-items: center;
 	width: 100%;
 	max-width: var(--standard-width); /*1144px*/
-	padding: 0 var(--spacing-md); 
+	padding: 0 var(--spacing-md);
 }
 
 .menu {
@@ -226,3 +261,5 @@ p {
 .navbar-button {
 	background: rgba(255, 255, 255, 0.5);
 }
+
+/* Hero Content */
