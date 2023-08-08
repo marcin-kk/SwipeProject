@@ -36,7 +36,7 @@
 	--bg-white: #fff;
 	--bg-light: #f7f9fc;
 
-	--standard-box-shadow: 0px 2px 40px rgba(0,0,0, 0.15)
+	--standard-box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -155,6 +155,27 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm) 0;
+}
+
+.card .icon {
+	height: 50px;
+	margin: 0 0 var(--spacing-sm) 0;
+}
+
+.card h3 {
+	font-family: var(--heading-font);
+	font-weight: 500;
+	font-size: var(--h6-size);
+	margin: 0;
+	width: 100%;
 }
 
 .subtitle,
