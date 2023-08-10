@@ -297,6 +297,10 @@ p {
 	background: rgba(255, 255, 255, 0.5);
 }
 
+.hamburger-button {
+	display: none;
+}
+
 /* ANIMATED GRADIENT */
 
 #gradient-canvas {
@@ -841,7 +845,7 @@ p {
 
 	/* NAVBAR */
 	.navbar {
-		margin: 0;
+		margin: var(--spacing-sm) 0 var(--spacing-lg) 0;
 	}
 	.navbar .menu {
 		display: none;
@@ -856,11 +860,14 @@ p {
 		border-radius: 20px;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 	.hamburger-button .bar {
-		width: 16px;
+		width: 18px;
 		height: 2px;
 		background-color: var(--bg-white);
+		margin: 1px 0;
 	}
 
 	/* MAIN */
